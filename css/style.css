@@ -147,41 +147,24 @@ button{
     border: 2px solid #CFBFC6;
     padding: 5px;
     border-radius: 10px;
-
-
 }
-/* .alcohol {
 
-} */
 
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
-.tragos {
+/* .tragos {
     border: 1px solid #ddd;
     border-radius: 0.5em;
     margin: 0.5rem;
     padding: 0.5rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
-}
+} */
 
-.tragos img {
-    max-width: 100%;
-    max-height: 300px;
-    padding: 1em;
-    margin: 0 auto;
-}
 
-.tragos h3 {
-    margin: 1em 0;
-    text-align: center;
-}
-.tragos p {
-    font-size: 12px;
-}
 
 .card{
     position: static;
@@ -190,12 +173,13 @@ button{
 
 /*Sin alcohol*/
 .smoothies, .licuados {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 2vh;
-  padding: 2vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 2vh;
+    padding: 2vh;
+    flex-wrap: wrap;
 }
 
 .cardsSinAlcohol {
@@ -207,7 +191,6 @@ button{
 .licuados {
     background-image: url(../img/fondo-licuado.jpeg);
     }
-
 
 .smoothies {
     background-image: url(../img/fondo-smoothie.jpeg);
@@ -221,37 +204,46 @@ button{
 /*cafe*/
 
 .receta {
-  border: 1px solid #ddd;
-  border-radius: 0.5em;
-  box-sizing: border-box;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
 }
 .receta p {
-  margin: 1.5em;
+    margin: 1.5em;
 }
 .receta figure {
-  margin: 1em;
-  align-items: center;
+    margin: 1em;
+    align-items: center;
 }
 .receta figure img {
-  width: 200px;
-  height: 200px;
+    width: 200px;
+    height: 200px;
 }
 .receta h3 {
-  color: var(--color3);
-  font-size: 1.2em;
-  font-weight: 500;
-  margin: 0 0 1em;
-  border-bottom: 1px solid black;
-  padding-bottom: 0.5em;
+    color: var(--color3);
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
 }
+
+.receta img {
+    max-width: 100%;
+    max-height: 300px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
 .receta h4 {
-  color: var(--color2);
-  font-size: 1em;
-  font-weight: 200;
+    color: var(--color2);
+    font-size: 1em;
+    font-weight: 200;
 }
 
 
@@ -298,91 +290,48 @@ footer {
 }
 
 @media (max-width: 600px) {
-    
-  body {
-    font-size: 14px;
-  }
-  .h3 h3 {
-    font-size: 14px;
-  }
-  header a img{
+header a img{
     height: 5dvh;
 }
 
-  nav {
+nav {
     height: 50%;
     background: var(--bg-color);
-  }
-  nav .navDesktop {
+}
+nav .navDesktop {
     display: none;
-  }
-  nav .navMobile {
+}
+nav .navMobile {
     display: contents;
-  }
-  .offcanvas.offcanvas-end {
+}
+.offcanvas.offcanvas-end {
     width: 50%;
-  }
-  .navbar-toggler {
+}
+.navbar-toggler {
     font-size: 10px;
     background-color: var(--color1);
-  }
+}
 
-  .tragos {
-    max-width: 200px;
-    max-height: 350px;
-  }
-  .tragos img {
-    max-height: 150px;
-  }
-  .tragos h3 {
-    font-size: 12px;
-  }
-  .tragos p {
-    font-size: 10px;
-  }
-  .arriba button {
-    font-size: 10px;
-  }
-  .sinAlcohol h3 {
+.alcohol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
     font-size: 3vh;
-  }
-  .sinAlcohol h4 {
+}
+h4 {
     font-size: 2vh;
     line-height: 1vh;
-  }
-  .sinAlcohol .recetaLicuado p {
+}
+p {
     margin: 3vh;
     padding-left: 1vh;
     font-size: 1.75vh;
-  }
-  .sinAlcohol .recetaSmoothie p {
-    margin: 3vh;
-    padding-left: 1vh;
-    font-size: 1.75vh;
-  }
-  .cafe-back {
-    width: 400px;
-    font-size: 14px;
-  }
-  .cafe-back img {
-    width: 100px;
-    height: 100px;
-  }
-  .columnContacto {
-    flex-direction: column;
-  }
-  .imagenContacto img {
-    width: 350px;
-    height: 300px;
-  }
-  .imagenContacto h2 {
-    text-align: center;
-  }
-  .formulario {
-    height: 70%;
-    align-items: center;
-    margin: 3vh;
-    padding: 2vh;
-  }
+}
+.cardsSinAlcohol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 }
 
