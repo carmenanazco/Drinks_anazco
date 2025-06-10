@@ -283,7 +283,7 @@ footer {
     margin-top: 3rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 550px) {
 header a img{
     height: 5dvh;
 }
@@ -320,6 +320,11 @@ h4 {
 }
 p {
     margin: 3vh;
+    padding-left: 1vh;
+    font-size: 1.75vh;
+}
+
+.hero p {
     padding-left: 1vh;
     font-size: 1.75vh;
 }
