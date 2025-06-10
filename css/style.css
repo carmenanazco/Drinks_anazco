@@ -1,9 +1,3 @@
-/*Paleta
-#F0E3CA ---- claro
-#FF8303 ---- naranja
-#A35709  --- naranja opaco
-#1B1A17 --- oscuro
-*/
 
 :root {
     --color1: #F0E3CA;
@@ -289,7 +283,7 @@ footer {
     margin-top: 3rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
 header a img{
     height: 5dvh;
 }
